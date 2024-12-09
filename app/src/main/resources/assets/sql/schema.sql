@@ -1,0 +1,75 @@
+CREATE DATABASE app;
+USE app;
+
+
+CREATE TABLE bolo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sabor VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL,
+    peso DOUBLE NOT NULL
+);
+
+
+CREATE TABLE caneta (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cor VARCHAR(50) NOT NULL,
+    ponta DOUBLE NOT NULL,
+    modelo VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE catedral (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    localizacao VARCHAR(150) NOT NULL,
+    altura DOUBLE NOT NULL
+);
+
+
+CREATE TABLE filme (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(200) NOT NULL,
+    genero VARCHAR(100) NOT NULL,
+    duracao INT NOT NULL
+);
+
+
+CREATE TABLE gato (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT NOT NULL,
+    cor VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE lustre (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    material VARCHAR(100) NOT NULL,
+    potencia INT NOT NULL,
+    cor VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE inseto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    especie VARCHAR(100) NOT NULL,
+    tamanho DOUBLE NOT NULL,
+    quantidade_patas INT NOT NULL
+);
+
+
+CREATE TABLE planta (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_cientifico VARCHAR(200) NOT NULL,
+    altura DOUBLE NOT NULL,
+    tipo_planta VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE disciplina (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    carga_horaria INT NOT NULL,
+    area_conhecimento VARCHAR(150) NOT NULL
+);
+
