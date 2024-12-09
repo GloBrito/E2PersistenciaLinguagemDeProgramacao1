@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="550.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.MenuController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+    <Label fx:id="welcomeText" />
+    <Text text="project app" />
+    <Button onAction="#onGatoButtonClick" text="Gato" />
+    <Button onAction="#onBoloButtonClick" text="Bolo" />
+    <Button onAction="#onCanetaButtonClick" text="Caneta" />
+    <Button onAction="#onCatedralButtonClick" text="Catedral" />
+    <Button onAction="#onFilmeButtonClick" text="Filme" />
+    <Button onAction="#onLustreButtonClick" text="Lustre" />
+    <Button onAction="#onPlantaButtonClick" text="Planta" />
+    <Button onAction="#onPinturaButtonClick" text="Pintura" />
+    <Button onAction="#onDisciplinaButtonClick" text="Disciplina" />
+    <Button onAction="#onInsetoButtonClick" text="Inseto" />
+    <Button mnemonicParsing="false" onAction="#fillDatabase" text="Preencher banco" />
+</VBox>
+
