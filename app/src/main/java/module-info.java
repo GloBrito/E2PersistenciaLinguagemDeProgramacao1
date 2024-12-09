@@ -1,16 +1,12 @@
-module org.example.app {
+module org.example.javafx {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
+    requires java.sql;
+    requires dotenv.java;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
-    opens org.example.app to javafx.fxml;
-    exports org.example.app;
+    opens app.DAOs to javafx.fxml;
+    exports app.DAOs;
+    exports app.controllers;
+    opens app.controllers to javafx.fxml;
 }
